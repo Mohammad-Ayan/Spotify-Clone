@@ -116,6 +116,17 @@ body {
     padding-top: 3px;
 }
 
+.card h2{
+    color: #FFFFFF;
+	font-family: Poppins, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+}
+.card p{
+    color: #B3B3B3;
+    font-size: 13.5px;
+}
+
 .card img {
     width: 100%;
     object-fit: contain;
@@ -126,3 +137,4 @@ body {
     top: 114px;
     right: 17px;
 }
+
