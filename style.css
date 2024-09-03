@@ -17,8 +17,8 @@ body {
 
 
 .left {
-    width: 25vw;
-    padding: 10px;
+    width: 23vw;
+    padding: 5px 2px 0 5px;
 }
 
 .right {
@@ -52,7 +52,7 @@ body {
 }
 
 .library {
-    min-height: 80vh;
+    min-height: 65vh;
     position: relative;
 }
 
@@ -62,11 +62,11 @@ body {
     gap: 8px;
     position: absolute;
     bottom: 0;
-    max-width: 80%; 
-    flex-wrap: wrap; 
-    padding: 6px; 
-    box-sizing: border-box; 
-  
+    max-width: 80%;
+    flex-wrap: wrap;
+    padding: 6px;
+    box-sizing: border-box;
+
 }
 
 .footer a {
@@ -78,7 +78,12 @@ body {
 }
 
 .right {
-    margin: 15px 8px 0 0;
+    box-sizing: border-box;
+    height: 89.5vh;
+    margin: 10px 8px 0 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   
 }
 
 .header {
@@ -88,24 +93,31 @@ body {
 }
 
 .header>* {
-    padding: 20px;
+    padding: 10px;
+}
+
+.nav{
+    align-items: center;
+    display: flex;
 }
 
 .spotifyPlaylists {
-    padding: 16px;
+    padding: 10px;
 
 }
 
 .cardContainer {
+    width: 73vw;
     margin: 10px;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
+    height: 36vh;
 
 }
 
 .card {
-    width: 165px;
+    width: 138px;
     padding: 9px;
     border-radius: 5px;
     background-color: #252525;
@@ -116,15 +128,16 @@ body {
     padding-top: 3px;
 }
 
-.card h2{
+.card h2 {
     color: #FFFFFF;
-	font-family: Poppins, sans-serif;
-	font-size: 15px;
-	font-weight: 500;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
-.card p{
+
+.card p {
     color: #B3B3B3;
-    font-size: 13.5px;
+    font-size: 12.5px;
 }
 
 .card img {
@@ -134,7 +147,32 @@ body {
 
 .play {
     position: absolute;
-    top: 114px;
+    top: 90px;
     right: 17px;
 }
+
+.signupbtn{
+    background-color: rgb(34 34 34);
+    cursor: pointer;
+    color: #C7C7C7;;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: 0 34px 0 0;
+}
+
+.loginbtn{
+    background-color: #C7C7C7;
+    border-radius: 9999px;
+	box-sizing: border-box;
+    cursor: pointer;
+    padding: 8px 32px;
+    min-height: 48px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+	transition: background-color 0.033s, transform 0.033s;
+	font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+	font-weight: 700;
+    position: relative;
+}
+
 

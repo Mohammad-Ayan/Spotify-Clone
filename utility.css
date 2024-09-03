@@ -40,3 +40,35 @@
 .p-1 {
     padding: 10px;
 }
+
+/* Webkit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1C1C1C; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333; /* Color of the scrollbar thumb (the draggable part) */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid #1C1C1C; /* Adds a border around the thumb for a cleaner look */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Brighter color on hover for the thumb */
+}
+
+/* Firefox */
+html {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #8a8989 #1C1C1C; /* Thumb color and track color */
+}
+
+/* Scrollbar for textarea and other text input fields */
+textarea, input {
+    scrollbar-color: #756f6f #1C1C1C; /* Thumb color and track color */
+    scrollbar-width: thin;
+}
