@@ -83,20 +83,20 @@ body {
     margin: 10px 8px 0 0;
     overflow-y: scroll;
     overflow-x: hidden;
-   
+    position: relative;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(34 34 34);
+    background-color: #0b0b0b;
 }
 
 .header>* {
-    padding: 10px;
+    padding: 7px;
 }
 
-.nav{
+.nav {
     align-items: center;
     display: flex;
 }
@@ -151,28 +151,64 @@ body {
     right: 17px;
 }
 
-.signupbtn{
-    background-color: rgb(34 34 34);
+.signupbtn {
+    background-color: #0b0b0b;
     cursor: pointer;
-    color: #C7C7C7;;
+    color: #C7C7C7;
+    ;
     border: none;
     outline: none;
-    font-weight: bold;
+    font-weight: 700;
     padding: 0 34px 0 0;
+    font-size: 15px;
 }
 
-.loginbtn{
-    background-color: #C7C7C7;
+
+
+.signupbtn:hover {
+    font-size: 0.97rem;
+    color: #FFFFFF;
+}
+
+
+.loginbtn {
+    background-color: #ffffff;
     border-radius: 9999px;
-	box-sizing: border-box;
+    box-sizing: border-box;
     cursor: pointer;
-    padding: 8px 32px;
-    min-height: 48px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-	transition: background-color 0.033s, transform 0.033s;
-	font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
-	font-weight: 700;
+    padding: 9px 33px;
+    min-height: 52px;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-weight: 700;
+    font-size: 15px;
     position: relative;
+    transition: background-color 0.033s, transform 0.033s;
+
+}
+
+.loginbtn:hover {
+    background-color: #ffffff;
+    border-radius: 9999px;
+    cursor: pointer;
+    transform: scale(1.04);
+    /* Increases the size by 2% */
 }
 
 
+.Playbar {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(32, 39, 32);
+    width: 100%;
+    padding: 12px;
+
+}
+
+.songbuttons {
+    display: flex;
+    height: 25px;
+    gap: 25px;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
